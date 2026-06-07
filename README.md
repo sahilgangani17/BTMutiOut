@@ -27,7 +27,7 @@ This repository is divided into two main components:
 ## 🚀 Getting Started
 
 ### For Users
-1. Download the latest `BTMultiOut-Setup.exe` from the Releases page (if available) or build it manually.
+1. Download the latest **[`BTMultiOut-Setup.exe`](https://github.com/sahilgangani17/BTMutiOut/releases)** from the Releases page.
 2. Run the installer. It will install the **VB-CABLE** virtual driver and the **BT MultiOut** app.
 3. Restart your PC if prompted.
 4. Open BT MultiOut, select your Bluetooth devices, and click **▶ Start Streaming**.
@@ -58,11 +58,11 @@ cd BTMultiOut-Installer
 
 ```mermaid
 graph TD
-    A[Windows System Audio] --> B[WASAPI Loopback Capture]
-    B --> C[BTMultiOut Engine]
-    C --> D[Device 1 (BT Speaker)]
-    C --> E[Device 2 (BT Headphones)]
-    C --> F[Device 3 (etc.)]
+    A["Windows System Audio"] --> B["WASAPI Loopback Capture"]
+    B --> C["BTMultiOut Engine"]
+    C --> D["Device 1 (BT Speaker)"]
+    C --> E["Device 2 (BT Headphones)"]
+    C --> F["Device 3 (etc.)"]
 ```
 
 NAudio's `WasapiLoopbackCapture` taps into the system audio stream. The engine then broadcasts the audio buffer to each selected `WasapiOut` device in parallel, handling format conversion automatically.
