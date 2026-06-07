@@ -1,0 +1,34 @@
+# .gitignore for BTMultiOutput
+
+## .NET Core / C#
+[Bb]in/
+[Oo]bj/
+*.user
+*.userosscache
+*.sln.docstates
+
+## Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.opensdf
+*.sdf
+*.cache
+*.sou
+*.log
+*.VC.db
+*.VC.opendb
+
+## Visual Studio Code
+.vscode/
+
+## Installer Build Artifacts
+BTMultiOut-Installer/dist/
+BTMultiOut-Installer/BTMultiOut-Setup.exe
+BTMultiOut-Installer/*.log
+
+## Other
+.DS_Store
+Thumbs.db
